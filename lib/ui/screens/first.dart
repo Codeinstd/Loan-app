@@ -105,11 +105,11 @@ class _FirstState extends State<First> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Image.asset(
-                          'assets/images/home.png',
-                          color: AppColors.iconcolor,
-                          height: 24,
-                        ),
+                        // Image.asset(
+                        //   'assets/images/home.png',
+                        //   color: AppColors.iconcolor,
+                        //   height: 24,
+                        // ),
                         const SizedBox(
                           height: 4,
                         ),
@@ -135,11 +135,11 @@ class _FirstState extends State<First> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Image.asset(
-                          'assets/images/payment.png',
-                          color: AppColors.iconcolor,
-                          height: 24,
-                        ),
+                        // Image.asset(
+                        //   'assets/images/payment.png',
+                        //   color: AppColors.iconcolor,
+                        //   height: 24,
+                        // ),
                         const SizedBox(
                           height: 4,
                         ),
