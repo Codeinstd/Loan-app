@@ -243,7 +243,139 @@ class _FirstState extends State<First> {
       ),
 
       // body section //
-      body: Column(),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+              child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 24, right: 24, top: 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // card //
+                  SizedBox(
+                    child: Stack(
+                      children: [
+                        Image.asset('assets/images/naira.png'),
+                        Padding(
+                          padding: const EdgeInsets.only(
+                              left: 16.0, right: 16, top: 14),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // title //
+                              const Text(
+                                'Your loan',
+                                style: TextStyle(
+                                    fontFamily: 'Raleway',
+                                    color: AppColors.white,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 13),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+
+                              // value //
+                              const Text(
+                                '₦40,500.00',
+                                style: TextStyle(
+                                    fontFamily: 'Raleway',
+                                    color: AppColors.white,
+                                    fontWeight: FontWeight.w700,
+                                    fontSize: 30),
+                              ),
+
+                              const SizedBox(
+                                height: 38,
+                              ),
+
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  // image //
+                                  Image.asset(
+                                    'assets/images/Group 1155.png',
+                                    color: AppColors.white,
+                                    height: 14,
+                                  ),
+                                  const SizedBox(
+                                    width: 6,
+                                  ),
+                                  const Text(
+                                    'Repayment is due Nov 26,2021',
+                                    style: TextStyle(
+                                        fontFamily: 'Raleway',
+                                        color: AppColors.white,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 11),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  const SizedBox(
+                    height: 32,
+                  ),
+
+                  InkWell(
+                    onTap: () {},
+                    child: SizedBox(
+                      width: 400,
+                      height: 60,
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          color: AppColors.pricolor.withOpacity(0.2),
+                          borderRadius: BorderRadius.circular(9),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 16.0, right: 16),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              // text //
+                              const Text(
+                                'Repay loan',
+                                style: TextStyle(
+                                    fontFamily: 'Raleway',
+                                    color: AppColors.headertext,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 14),
+                              ),
+
+                              // icon //
+                              SizedBox(
+                                width: 36,
+                                height: 36,
+                                child: DecoratedBox(
+                                  decoration: BoxDecoration(
+                                      color: AppColors.pricolor,
+                                      borderRadius: BorderRadius.circular(100)),
+                                  child: Icon(
+                                    Icons.arrow_forward_sharp,
+                                    size: 18,
+                                    color: AppColors.white,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ))
+        ],
+      ),
     );
   }
 }
