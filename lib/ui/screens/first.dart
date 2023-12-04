@@ -86,7 +86,7 @@ class _FirstState extends State<First> {
         height: 55,
         color: AppColors.white,
         // elevation: 1,
-        padding: const EdgeInsets.only(left: 16, top: 10, right: 16, bottom: 0),
+        padding: const EdgeInsets.only(left: 36, top: 10, right: 36, bottom: 0),
         child: SizedBox(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -105,22 +105,29 @@ class _FirstState extends State<First> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        // Image.asset(
-                        //   'assets/images/home.png',
-                        //   color: AppColors.iconcolor,
-                        //   height: 24,
-                        // ),
+                        Image.asset(
+                          'assets/images/category.png',
+                          color: AppColors.pricolor,
+                          height: 24,
+                        ),
                         const SizedBox(
                           height: 4,
                         ),
-                        // SizeConfig().p12medb('Home', 14),
+                        const Text(
+                          'Home',
+                          style: TextStyle(
+                              fontFamily: 'Raleway',
+                              color: AppColors.pricolor,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 12),
+                        ),
                       ],
                     ),
                   )
                 ],
               ),
 
-              // payment //
+              // Loan //
 
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -135,108 +142,29 @@ class _FirstState extends State<First> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        // Image.asset(
-                        //   'assets/images/payment.png',
-                        //   color: AppColors.iconcolor,
-                        //   height: 24,
-                        // ),
+                        Image.asset(
+                          'assets/images/Loans.png',
+                          color: AppColors.iconcolor,
+                          height: 24,
+                        ),
                         const SizedBox(
                           height: 4,
                         ),
-                        // SizeConfig().p12medb('Payment', 14),
+                        const Text(
+                          'Loans',
+                          style: TextStyle(
+                              fontFamily: 'Raleway',
+                              color: AppColors.subtext,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 12),
+                        ),
                       ],
                     ),
                   )
                 ],
               ),
 
-              // QR code //
-
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  InkWell(
-                    onTap: () {
-                      showModalBottomSheet(
-                          backgroundColor: AppColors.white,
-                          isDismissible: true,
-                          isScrollControlled: true,
-                          enableDrag: true,
-                          context: context,
-                          shape: const RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.vertical(top: Radius.circular(20)),
-                          ),
-                          builder: (BuildContext context) {
-                            return SizedBox(
-                              width: 375,
-                              child: DecoratedBox(
-                                decoration: const BoxDecoration(
-                                  color: AppColors.white,
-                                  borderRadius: BorderRadius.vertical(
-                                    top: Radius.circular(20),
-                                  ),
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(24),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            // SizeConfig().p18medB('QR Code', 18),
-                                            // link //
-                                            TextButton(
-                                              onPressed: () {
-                                                Navigator.pop(context);
-                                              },
-                                              child: const Icon(
-                                                Icons.close_sharp,
-                                                color: AppColors.iconcolor,
-                                              ),
-                                            ),
-                                          ]),
-                                      Image.asset(
-                                        'assets/images/QR_code.png',
-                                        height: 200,
-                                      ),
-                                      // SizeConfig()
-                                      //     .p12regB('Personal Unique Code', 12),
-                                      const SizedBox(
-                                        height: 20,
-                                      ),
-                                      // SizeConfig().p20medB('Coming Soon!', 20),
-                                      const SizedBox(
-                                        height: 16,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            );
-                          });
-                    },
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        // Image.asset(
-                        //   'assets/images/qr.png',
-                        //   // color: AppColors.lightGrey,
-                        //   height: 24,
-                        // ),
-                        const SizedBox(
-                          height: 4,
-                        ),
-                        // SizeConfig().p12medb('QR Code', 14),
-                      ],
-                    ),
-                  )
-                ],
-              ),
-
-              // chatroom //
+              // Cards //
 
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -245,46 +173,65 @@ class _FirstState extends State<First> {
                     onTap: () {
                       // Navigator.of(context).push(
                       //   MaterialPageRoute(
-                      //       builder: (context) => const chatroom()),
+                      //       builder: (context) => const payment()),
                       // );
                     },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        // Image.asset(
-                        //   'assets/images/chatroom.png',
-                        //   color: AppColors.lightGrey,
-                        //   height: 24,
-                        // ),
+                        Image.asset(
+                          'assets/images/credit-card.png',
+                          color: AppColors.iconcolor,
+                          height: 24,
+                        ),
                         const SizedBox(
                           height: 4,
                         ),
-                        // SizeConfig().p12medb('Chatroom', 14),
+                        const Text(
+                          'Cards',
+                          style: TextStyle(
+                              fontFamily: 'Raleway',
+                              color: AppColors.subtext,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 12),
+                        ),
                       ],
                     ),
                   )
                 ],
               ),
 
-              // profile //
+              // cards //
 
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      // Navigator.of(context).push(
+                      //   MaterialPageRoute(
+                      //       builder: (context) => const payment()),
+                      // );
+                    },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        // Image.asset(
-                        //   'assets/images/user..png',
-                        //   color: AppColors.main,
-                        //   height: 24,
-                        // ),
+                        Image.asset(
+                          'assets/images/Vector.png',
+                          color: AppColors.iconcolor,
+                          height: 24,
+                        ),
                         const SizedBox(
                           height: 4,
                         ),
-                        // SizeConfig().p12medC('Profile', 14),
+                        const Text(
+                          'Account',
+                          style: TextStyle(
+                              fontFamily: 'Raleway',
+                              color: AppColors.subtext,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 12),
+                        ),
                       ],
                     ),
                   )
