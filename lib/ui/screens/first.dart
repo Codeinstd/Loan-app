@@ -22,7 +22,7 @@ class _FirstState extends State<First> {
         actions: [
           Expanded(
               child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -52,7 +52,7 @@ class _FirstState extends State<First> {
                           fontFamily: 'Raleway',
                           color: AppColors.subtext,
                           fontWeight: FontWeight.w500,
-                          fontSize: 13),
+                          fontSize: 12.5),
                     ),
                   ],
                 ),
