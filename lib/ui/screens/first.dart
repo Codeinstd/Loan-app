@@ -331,7 +331,7 @@ class _FirstState extends State<First> {
                       height: 60,
                       child: DecoratedBox(
                         decoration: BoxDecoration(
-                          color: AppColors.pricolor.withOpacity(0.2),
+                          color: AppColors.pricolor.withOpacity(0.1),
                           borderRadius: BorderRadius.circular(9),
                         ),
                         child: Padding(
@@ -351,25 +351,425 @@ class _FirstState extends State<First> {
 
                               // icon //
                               SizedBox(
-                                width: 36,
-                                height: 36,
+                                width: 34,
+                                height: 34,
                                 child: DecoratedBox(
                                   decoration: BoxDecoration(
                                       color: AppColors.pricolor,
                                       borderRadius: BorderRadius.circular(100)),
-                                  child: Icon(
+                                  child: const Icon(
                                     Icons.arrow_forward_sharp,
                                     size: 18,
                                     color: AppColors.white,
                                   ),
                                 ),
-                              )
+                              ),
                             ],
                           ),
                         ),
                       ),
                     ),
-                  )
+                  ),
+
+                  const SizedBox(
+                    height: 24,
+                  ),
+
+                  // recent activity //
+                  SizedBox(
+                    width: 400,
+                    height: 360,
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        color: AppColors.white,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.all(18.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            // header //
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                // title //
+                                Text(
+                                  'Recent Activity',
+                                  style: TextStyle(
+                                      fontFamily: 'Raleway',
+                                      color: AppColors.headertext,
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 13),
+                                ),
+
+                                // link //
+                                const Text(
+                                  'See All',
+                                  style: TextStyle(
+                                      fontFamily: 'Raleway',
+                                      color: AppColors.pricolor,
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 11),
+                                ),
+                              ],
+                            ),
+
+                            const SizedBox(
+                              height: 16,
+                            ),
+
+                            // row 01 //
+                            SizedBox(
+                              width: 308,
+                              height: 60,
+                              child: DecoratedBox(
+                                decoration: BoxDecoration(
+                                  color: AppColors.grayscalebg2,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 12, vertical: 10),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          // icon //
+                                          SizedBox(
+                                            width: 24,
+                                            height: 24,
+                                            child: DecoratedBox(
+                                              decoration: BoxDecoration(
+                                                  color: AppColors.pricolor,
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          100)),
+                                              child: const Icon(
+                                                Icons.arrow_forward_sharp,
+                                                size: 14,
+                                                color: AppColors.white,
+                                              ),
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            width: 16,
+                                          ),
+
+                                          // text //
+                                          Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                'Loan repayment',
+                                                style: TextStyle(
+                                                    fontFamily: 'Raleway',
+                                                    color: AppColors.headertext,
+                                                    fontWeight: FontWeight.w600,
+                                                    fontSize: 13),
+                                              ),
+                                              const SizedBox(
+                                                height: 3,
+                                              ),
+                                              Text(
+                                                'Sat, Nov 20,2021 at 21:29',
+                                                style: TextStyle(
+                                                    fontFamily: 'Raleway',
+                                                    color: AppColors.subtext,
+                                                    fontWeight: FontWeight.w400,
+                                                    fontSize: 11),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      // text //
+                                      Text(
+                                        '₦5000',
+                                        style: TextStyle(
+                                            fontFamily: 'Raleway',
+                                            color: AppColors.subtext,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 11),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(
+                              height: 14,
+                            ),
+
+                            // row 02 //
+                            SizedBox(
+                              width: 308,
+                              height: 60,
+                              child: DecoratedBox(
+                                decoration: BoxDecoration(
+                                  color: AppColors.grayscalebg2,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 12, vertical: 10),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          // icon //
+                                          SizedBox(
+                                            width: 24,
+                                            height: 24,
+                                            child: DecoratedBox(
+                                              decoration: BoxDecoration(
+                                                  color: AppColors.orange,
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          100)),
+                                              child: const Icon(
+                                                Icons.arrow_forward_sharp,
+                                                size: 14,
+                                                color: AppColors.white,
+                                              ),
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            width: 16,
+                                          ),
+
+                                          // text //
+                                          Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                'Loan request',
+                                                style: TextStyle(
+                                                    fontFamily: 'Raleway',
+                                                    color: AppColors.headertext,
+                                                    fontWeight: FontWeight.w600,
+                                                    fontSize: 13),
+                                              ),
+                                              const SizedBox(
+                                                height: 3,
+                                              ),
+                                              Text(
+                                                'Sat, Nov 20,2021 at 21:29',
+                                                style: TextStyle(
+                                                    fontFamily: 'Raleway',
+                                                    color: AppColors.subtext,
+                                                    fontWeight: FontWeight.w400,
+                                                    fontSize: 11),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      // text //
+                                      Text(
+                                        '₦45,000',
+                                        style: TextStyle(
+                                            fontFamily: 'Raleway',
+                                            color: AppColors.subtext,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 11),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(
+                              height: 14,
+                            ),
+
+                            // row 03 //
+                            SizedBox(
+                              width: 308,
+                              height: 60,
+                              child: DecoratedBox(
+                                decoration: BoxDecoration(
+                                  color: AppColors.grayscalebg2,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 12, vertical: 10),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          // icon //
+                                          SizedBox(
+                                            width: 24,
+                                            height: 24,
+                                            child: DecoratedBox(
+                                              decoration: BoxDecoration(
+                                                  color: AppColors.pricolor,
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          100)),
+                                              child: const Icon(
+                                                Icons.arrow_forward_sharp,
+                                                size: 14,
+                                                color: AppColors.white,
+                                              ),
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            width: 16,
+                                          ),
+
+                                          // text //
+                                          Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                'Installment repayment',
+                                                style: TextStyle(
+                                                    fontFamily: 'Raleway',
+                                                    color: AppColors.headertext,
+                                                    fontWeight: FontWeight.w600,
+                                                    fontSize: 13),
+                                              ),
+                                              const SizedBox(
+                                                height: 3,
+                                              ),
+                                              Text(
+                                                'Sat, Nov 20,2021 at 21:29',
+                                                style: TextStyle(
+                                                    fontFamily: 'Raleway',
+                                                    color: AppColors.subtext,
+                                                    fontWeight: FontWeight.w400,
+                                                    fontSize: 11),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      // text //
+                                      Text(
+                                        '₦35,000',
+                                        style: TextStyle(
+                                            fontFamily: 'Raleway',
+                                            color: AppColors.subtext,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 11),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+
+                            const SizedBox(
+                              height: 14,
+                            ),
+
+                            SizedBox(
+                              width: 308,
+                              height: 60,
+                              child: DecoratedBox(
+                                decoration: BoxDecoration(
+                                  color: AppColors.grayscalebg2,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 12, vertical: 10),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          // icon //
+                                          SizedBox(
+                                            width: 24,
+                                            height: 24,
+                                            child: DecoratedBox(
+                                              decoration: BoxDecoration(
+                                                  color: AppColors.pricolor,
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          100)),
+                                              child: const Icon(
+                                                Icons.arrow_forward_sharp,
+                                                size: 14,
+                                                color: AppColors.white,
+                                              ),
+                                            ),
+                                          ),
+                                          const SizedBox(
+                                            width: 16,
+                                          ),
+
+                                          // text //
+                                          Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                'Installment repayment',
+                                                style: TextStyle(
+                                                    fontFamily: 'Raleway',
+                                                    color: AppColors.headertext,
+                                                    fontWeight: FontWeight.w600,
+                                                    fontSize: 13),
+                                              ),
+                                              const SizedBox(
+                                                height: 3,
+                                              ),
+                                              Text(
+                                                'Sat, Nov 20,2021 at 21:29',
+                                                style: TextStyle(
+                                                    fontFamily: 'Raleway',
+                                                    color: AppColors.subtext,
+                                                    fontWeight: FontWeight.w400,
+                                                    fontSize: 11),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      // text //
+                                      Text(
+                                        '₦35,000',
+                                        style: TextStyle(
+                                            fontFamily: 'Raleway',
+                                            color: AppColors.subtext,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 11),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
