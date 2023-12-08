@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loan_app/ui/screens/first.dart';
+import 'package:loan_app/ui/screens/second.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: const First(),
+      home: const Second(),
     );
   }
 }
