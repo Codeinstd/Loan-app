@@ -246,7 +246,7 @@ class _SecondState extends State<Second> {
 
                   SizedBox(
                     width: 400,
-                    height: 175,
+                    height: 205,
                     child: DecoratedBox(
                       decoration: BoxDecoration(
                           color: AppColors.white,
@@ -286,128 +286,221 @@ class _SecondState extends State<Second> {
                               height: 24,
                             ),
 
-                            // list //
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                // label //
-                                Text(
-                                  'Amount',
-                                  style: TextStyle(
-                                      fontFamily: 'Raleway',
-                                      color: AppColors.subtext,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 12),
+                                // column 01 //
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'First instalment',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.headertext,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
+
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+
+                                    // bottom //
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Icon(Icons.radio_button_off_outlined),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          'Nov 10,2021',
+                                          style: TextStyle(
+                                              fontFamily: 'Raleway',
+                                              color: AppColors.headertext,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 12),
+                                        ),
+                                      ],
+                                    )
+                                  ],
                                 ),
 
-                                SizedBox(
-                                  width: 8,
+                                // column 02 //
+
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Repayment amount',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.headertext,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
+
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+
+                                    // bottom //
+                                    Text(
+                                      '₦20,000',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.headertext,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
+                                  ],
                                 ),
-                                // label //
-                                Text(
-                                  '₦35,000',
-                                  style: TextStyle(
-                                      fontFamily: 'Raleway',
-                                      color: AppColors.headertext,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 12),
-                                ),
+
+                                // column 02 //
+
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Status',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.headertext,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
+
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+
+                                    // bottom //
+                                    Text(
+                                      'Paid',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.green,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
+                                  ],
+                                )
                               ],
                             ),
 
                             SizedBox(
-                              height: 10,
+                              height: 4,
                             ),
-
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                // label //
-                                Text(
-                                  'Interest on loan',
-                                  style: TextStyle(
-                                      fontFamily: 'Raleway',
-                                      color: AppColors.subtext,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 12),
-                                ),
-
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                // label //
-                                Text(
-                                  '₦35,000',
-                                  style: TextStyle(
-                                      fontFamily: 'Raleway',
-                                      color: AppColors.headertext,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 12),
-                                ),
-                              ],
+                            Divider(
+                              color: AppColors.divider,
                             ),
-
                             SizedBox(
-                              height: 10,
+                              height: 4,
                             ),
 
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                // label //
-                                Text(
-                                  'Duration',
-                                  style: TextStyle(
-                                      fontFamily: 'Raleway',
-                                      color: AppColors.subtext,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 12),
+                                // column 01 //
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'First instalment',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.headertext,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
+
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+
+                                    // bottom //
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Icon(Icons.radio_button_off_outlined),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          'Nov 10,2021',
+                                          style: TextStyle(
+                                              fontFamily: 'Raleway',
+                                              color: AppColors.headertext,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 12),
+                                        ),
+                                      ],
+                                    )
+                                  ],
                                 ),
 
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                // label //
-                                Text(
-                                  '30 Days',
-                                  style: TextStyle(
-                                      fontFamily: 'Raleway',
-                                      color: AppColors.headertext,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 12),
-                                ),
-                              ],
-                            ),
+                                // column 02 //
 
-                            SizedBox(
-                              height: 10,
-                            ),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Repayment amount',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.headertext,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
 
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                // label //
-                                Text(
-                                  'Application date',
-                                  style: TextStyle(
-                                      fontFamily: 'Raleway',
-                                      color: AppColors.subtext,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 12),
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+
+                                    // bottom //
+                                    Text(
+                                      '₦20,000',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.headertext,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
+                                  ],
                                 ),
 
-                                SizedBox(
-                                  width: 8,
-                                ),
-                                // label //
-                                Text(
-                                  'Oct 26, 2021',
-                                  style: TextStyle(
-                                      fontFamily: 'Raleway',
-                                      color: AppColors.headertext,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 12),
-                                ),
+                                // column 02 //
+
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Status',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.headertext,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
+
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+
+                                    // bottom //
+                                    Text(
+                                      'Outstanding',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.orange,
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 12),
+                                    ),
+                                  ],
+                                )
                               ],
                             ),
                           ],
