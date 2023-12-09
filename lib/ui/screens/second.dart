@@ -579,7 +579,7 @@ class _SecondState extends State<Second> {
                     color: AppColors.white,
                     child: Padding(
                       padding: EdgeInsets.only(
-                          top: 2.0, left: 2.0, right: 2.0, bottom: 2.0),
+                          top: 0.0, left: 2.0, right: 2.0, bottom: 0.0),
                       child: ExpansionTile(
                         title: Text(
                           'Extend loan payment',
