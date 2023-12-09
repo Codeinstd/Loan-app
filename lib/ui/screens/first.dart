@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loan_app/config/color.dart';
+import 'package:loan_app/ui/screens/second.dart';
 
 class First extends StatefulWidget {
   const First({super.key});
@@ -420,84 +421,96 @@ class _FirstState extends State<First> {
                             ),
 
                             // row 01 //
-                            SizedBox(
-                              width: 308,
-                              height: 60,
-                              child: DecoratedBox(
-                                decoration: BoxDecoration(
-                                  color: AppColors.grayscalebg2,
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 12, vertical: 10),
-                                  child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        children: [
-                                          // icon //
-                                          SizedBox(
-                                            width: 24,
-                                            height: 24,
-                                            child: DecoratedBox(
-                                              decoration: BoxDecoration(
-                                                  color: AppColors.pricolor,
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          100)),
-                                              child: const Icon(
-                                                Icons.arrow_forward_sharp,
-                                                size: 14,
-                                                color: AppColors.white,
+                            InkWell(
+                              onTap: () {
+                                Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const Second()),
+                                );
+                              },
+                              child: SizedBox(
+                                width: 308,
+                                height: 60,
+                                child: DecoratedBox(
+                                  decoration: BoxDecoration(
+                                    color: AppColors.grayscalebg2,
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 12, vertical: 10),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            // icon //
+                                            SizedBox(
+                                              width: 24,
+                                              height: 24,
+                                              child: DecoratedBox(
+                                                decoration: BoxDecoration(
+                                                    color: AppColors.pricolor,
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            100)),
+                                                child: const Icon(
+                                                  Icons.arrow_forward_sharp,
+                                                  size: 14,
+                                                  color: AppColors.white,
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          const SizedBox(
-                                            width: 16,
-                                          ),
+                                            const SizedBox(
+                                              width: 16,
+                                            ),
 
-                                          // text //
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                'Loan repayment',
-                                                style: TextStyle(
-                                                    fontFamily: 'Raleway',
-                                                    color: AppColors.headertext,
-                                                    fontWeight: FontWeight.w600,
-                                                    fontSize: 13),
-                                              ),
-                                              const SizedBox(
-                                                height: 3,
-                                              ),
-                                              Text(
-                                                'Sat, Nov 20,2021 at 21:29',
-                                                style: TextStyle(
-                                                    fontFamily: 'Raleway',
-                                                    color: AppColors.subtext,
-                                                    fontWeight: FontWeight.w400,
-                                                    fontSize: 11),
-                                              ),
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                      // text //
-                                      Text(
-                                        '₦5000',
-                                        style: TextStyle(
-                                            fontFamily: 'Raleway',
-                                            color: AppColors.subtext,
-                                            fontWeight: FontWeight.w600,
-                                            fontSize: 11),
-                                      ),
-                                    ],
+                                            // text //
+                                            Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  'Loan repayment',
+                                                  style: TextStyle(
+                                                      fontFamily: 'Raleway',
+                                                      color:
+                                                          AppColors.headertext,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      fontSize: 13),
+                                                ),
+                                                const SizedBox(
+                                                  height: 3,
+                                                ),
+                                                Text(
+                                                  'Sat, Nov 20,2021 at 21:29',
+                                                  style: TextStyle(
+                                                      fontFamily: 'Raleway',
+                                                      color: AppColors.subtext,
+                                                      fontWeight:
+                                                          FontWeight.w400,
+                                                      fontSize: 11),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
+                                        ),
+                                        // text //
+                                        Text(
+                                          '₦5000',
+                                          style: TextStyle(
+                                              fontFamily: 'Raleway',
+                                              color: AppColors.subtext,
+                                              fontWeight: FontWeight.w600,
+                                              fontSize: 11),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
@@ -682,6 +695,8 @@ class _FirstState extends State<First> {
                             const SizedBox(
                               height: 14,
                             ),
+
+                            // button //
 
                             SizedBox(
                               width: 308,

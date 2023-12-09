@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loan_app/config/color.dart';
+import 'package:loan_app/ui/screens/first.dart';
 
 class Second extends StatefulWidget {
   const Second({super.key});
@@ -14,7 +15,14 @@ class _SecondState extends State<Second> {
     return Scaffold(
       backgroundColor: AppColors.bg,
       appBar: AppBar(
-        leading: Icon(Icons.arrow_back_ios_new),
+        leading: InkWell(
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const First()),
+              );
+            },
+            child: Icon(Icons.arrow_back_ios_new)),
         title: const Text(
           'Loan repayment details,',
           style: TextStyle(
@@ -72,7 +80,7 @@ class _SecondState extends State<Second> {
                     child: DecoratedBox(
                       decoration: BoxDecoration(
                           color: AppColors.white,
-                          borderRadius: BorderRadius.circular(8)),
+                          borderRadius: BorderRadius.circular(12)),
                       child: Padding(
                         padding:
                             const EdgeInsets.only(left: 16, right: 16, top: 16),
@@ -250,7 +258,7 @@ class _SecondState extends State<Second> {
                     child: DecoratedBox(
                       decoration: BoxDecoration(
                           color: AppColors.white,
-                          borderRadius: BorderRadius.circular(8)),
+                          borderRadius: BorderRadius.circular(12)),
                       child: Padding(
                         padding:
                             const EdgeInsets.only(left: 16, right: 16, top: 16),
@@ -507,11 +515,386 @@ class _SecondState extends State<Second> {
                         ),
                       ),
                     ),
-                  )
+                  ),
+
+                  SizedBox(
+                    height: 16,
+                  ),
+
+                  // extend loan payment //
+
+                  // SizedBox(
+                  //   width: 400,
+                  //   height: 54,
+                  //   child: DecoratedBox(
+                  //     decoration: BoxDecoration(
+                  //         color: AppColors.white,
+                  //         borderRadius: BorderRadius.circular(12)),
+                  //     child: Padding(
+                  //       padding: const EdgeInsets.only(
+                  //         left: 14,
+                  //         right: 14,
+                  //         top: 16,
+                  //       ),
+                  //       child: Column(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           // title //
+                  //           Row(
+                  //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  //             children: [
+                  //               // label //
+                  //               Text(
+                  //                 'Extend loan payment',
+                  //                 style: TextStyle(
+                  //                     fontFamily: 'Raleway',
+                  //                     color: AppColors.headertext,
+                  //                     fontWeight: FontWeight.w700,
+                  //                     fontSize: 14),
+                  //               ),
+
+                  //               SizedBox(
+                  //                 width: 8,
+                  //               ),
+
+                  //               Icon(
+                  //                 Icons.arrow_forward_ios_outlined,
+                  //                 size: 16,
+                  //                 color: AppColors.pricolor,
+                  //               )
+                  //             ],
+                  //           ),
+
+                  //           SizedBox(
+                  //             height: 24,
+                  //           ),
+                  //         ],
+                  //       ),
+                  //     ),
+                  //   ),
+                  // ),
+
+                  Card(
+                    elevation: 0,
+                    color: AppColors.white,
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          top: 2.0, left: 2.0, right: 2.0, bottom: 2.0),
+                      child: ExpansionTile(
+                        title: Text(
+                          'Extend loan payment',
+                          style: TextStyle(
+                              fontFamily: 'Raleway',
+                              color: AppColors.headertext,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 14),
+                        ),
+                        children: <Widget>[
+                          Padding(
+                            padding:
+                                const EdgeInsets.only(left: 16.0, right: 16.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                // subtext //
+                                Text(
+                                  'Extending your loan repayment date will attract extra charge. This will be deducted from your linked card',
+                                  style: TextStyle(
+                                      fontFamily: 'Raleway',
+                                      color: AppColors.subtext,
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 12),
+                                ),
+
+                                SizedBox(
+                                  height: 16,
+                                ),
+
+                                // header //
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    // title 01 //
+                                    Text(
+                                      'Days extended',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.headertext,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 12),
+                                    ),
+
+                                    // title 02 //
+                                    Text(
+                                      'Amount to deduct',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.headertext,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 12),
+                                    ),
+                                  ],
+                                ),
+
+                                SizedBox(
+                                  height: 8,
+                                ),
+
+                                // content 01 //
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    // 01 //
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Icon(
+                                          Icons.radio_button_off_outlined,
+                                          size: 16,
+                                          color: AppColors.subtext,
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          '7 days',
+                                          style: TextStyle(
+                                              fontFamily: 'Raleway',
+                                              color: AppColors.subtext,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 12),
+                                        ),
+                                      ],
+                                    ),
+
+                                    //  02 //
+                                    Text(
+                                      '₦500',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.subtext,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 12),
+                                    ),
+                                  ],
+                                ),
+
+                                // content 02 //
+                                SizedBox(
+                                  height: 8,
+                                ),
+
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    // 01 //
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Icon(
+                                          Icons.radio_button_off_outlined,
+                                          size: 16,
+                                          color: AppColors.subtext,
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          '15 days',
+                                          style: TextStyle(
+                                              fontFamily: 'Raleway',
+                                              color: AppColors.subtext,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 12),
+                                        ),
+                                      ],
+                                    ),
+
+                                    //  02 //
+                                    Text(
+                                      '₦1,000',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.subtext,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 12),
+                                    ),
+                                  ],
+                                ),
+
+                                // content 03 //
+                                SizedBox(
+                                  height: 8,
+                                ),
+
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    // 01 //
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Icon(
+                                          Icons.radio_button_off_outlined,
+                                          size: 16,
+                                          color: AppColors.subtext,
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          '21 days',
+                                          style: TextStyle(
+                                              fontFamily: 'Raleway',
+                                              color: AppColors.subtext,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 12),
+                                        ),
+                                      ],
+                                    ),
+
+                                    //  02 //
+                                    Text(
+                                      '₦1,400',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.subtext,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 12),
+                                    ),
+                                  ],
+                                ),
+
+                                // content 04 //
+                                SizedBox(
+                                  height: 8,
+                                ),
+
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    // 01 //
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      children: [
+                                        Icon(
+                                          Icons.radio_button_off_outlined,
+                                          size: 16,
+                                          color: AppColors.subtext,
+                                        ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          '30 days',
+                                          style: TextStyle(
+                                              fontFamily: 'Raleway',
+                                              color: AppColors.subtext,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 12),
+                                        ),
+                                      ],
+                                    ),
+
+                                    //  02 //
+                                    Text(
+                                      '₦2,000',
+                                      style: TextStyle(
+                                          fontFamily: 'Raleway',
+                                          color: AppColors.subtext,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 12),
+                                    ),
+                                  ],
+                                ),
+
+                                SizedBox(
+                                  height: 18,
+                                ),
+
+                                // button //
+                                SizedBox(
+                                  width: 100,
+                                  height: 35,
+                                  child: DecoratedBox(
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            color: AppColors.pricolor),
+                                        borderRadius:
+                                            BorderRadius.circular(12)),
+                                    child: const Padding(
+                                      padding: EdgeInsets.all(8.0),
+                                      child: Center(
+                                        child: Text(
+                                          'Extend loan',
+                                          style: TextStyle(
+                                              fontFamily: 'Raleway',
+                                              color: AppColors.pricolor,
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 13),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+
+                                SizedBox(
+                                  height: 14,
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+
+                  // SizedBox(
+                  //   height: 40,
+                  // ),
                 ],
               ),
             ),
-          ))
+          )),
+          // button //
+          Padding(
+            padding: const EdgeInsets.only(left: 24.0, right: 24, bottom: 80),
+            child: TextButton(
+              onPressed: () {},
+              child: SizedBox(
+                width: 400,
+                height: 45,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    color: AppColors.pricolor,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Center(
+                      child: Text(
+                        'Make a repayment',
+                        style: TextStyle(
+                            fontFamily: 'Raleway',
+                            color: AppColors.white,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 14),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
