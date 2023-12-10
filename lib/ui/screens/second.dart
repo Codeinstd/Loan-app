@@ -97,11 +97,11 @@ class _SecondState extends State<Second> {
                                   height: 18,
                                 ),
 
-                                SizedBox(
+                                const SizedBox(
                                   width: 8,
                                 ),
                                 // label //
-                                Text(
+                                const Text(
                                   'Loan details',
                                   style: TextStyle(
                                       fontFamily: 'Raleway',
@@ -112,12 +112,12 @@ class _SecondState extends State<Second> {
                               ],
                             ),
 
-                            SizedBox(
+                            const SizedBox(
                               height: 24,
                             ),
 
                             // list //
-                            Row(
+                            const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 // label //
@@ -145,11 +145,11 @@ class _SecondState extends State<Second> {
                               ],
                             ),
 
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
 
-                            Row(
+                            const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 // label //
@@ -177,11 +177,11 @@ class _SecondState extends State<Second> {
                               ],
                             ),
 
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
 
-                            Row(
+                            const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 // label //
@@ -246,7 +246,7 @@ class _SecondState extends State<Second> {
                     ),
                   ),
 
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
 
@@ -275,11 +275,11 @@ class _SecondState extends State<Second> {
                                   height: 18,
                                 ),
 
-                                SizedBox(
+                                const SizedBox(
                                   width: 8,
                                 ),
                                 // label //
-                                Text(
+                                const Text(
                                   'Loan repayment schedule',
                                   style: TextStyle(
                                       fontFamily: 'Raleway',
@@ -290,11 +290,11 @@ class _SecondState extends State<Second> {
                               ],
                             ),
 
-                            SizedBox(
+                            const SizedBox(
                               height: 24,
                             ),
 
-                            Row(
+                            const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 // column 01 //
@@ -398,17 +398,17 @@ class _SecondState extends State<Second> {
                               ],
                             ),
 
-                            SizedBox(
+                            const SizedBox(
                               height: 4,
                             ),
-                            Divider(
+                            const Divider(
                               color: AppColors.divider,
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 4,
                             ),
 
-                            Row(
+                            const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 // column 01 //
@@ -517,71 +517,18 @@ class _SecondState extends State<Second> {
                     ),
                   ),
 
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-
-                  // extend loan payment //
-
-                  // SizedBox(
-                  //   width: 400,
-                  //   height: 54,
-                  //   child: DecoratedBox(
-                  //     decoration: BoxDecoration(
-                  //         color: AppColors.white,
-                  //         borderRadius: BorderRadius.circular(12)),
-                  //     child: Padding(
-                  //       padding: const EdgeInsets.only(
-                  //         left: 14,
-                  //         right: 14,
-                  //         top: 16,
-                  //       ),
-                  //       child: Column(
-                  //         crossAxisAlignment: CrossAxisAlignment.start,
-                  //         children: [
-                  //           // title //
-                  //           Row(
-                  //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  //             children: [
-                  //               // label //
-                  //               Text(
-                  //                 'Extend loan payment',
-                  //                 style: TextStyle(
-                  //                     fontFamily: 'Raleway',
-                  //                     color: AppColors.headertext,
-                  //                     fontWeight: FontWeight.w700,
-                  //                     fontSize: 14),
-                  //               ),
-
-                  //               SizedBox(
-                  //                 width: 8,
-                  //               ),
-
-                  //               Icon(
-                  //                 Icons.arrow_forward_ios_outlined,
-                  //                 size: 16,
-                  //                 color: AppColors.pricolor,
-                  //               )
-                  //             ],
-                  //           ),
-
-                  //           SizedBox(
-                  //             height: 24,
-                  //           ),
-                  //         ],
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
 
                   Card(
                     elevation: 0,
                     color: AppColors.white,
                     child: Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                           top: 0.0, left: 2.0, right: 2.0, bottom: 0.0),
                       child: ExpansionTile(
-                        title: Text(
+                        title: const Text(
                           'Extend loan payment',
                           style: TextStyle(
                               fontFamily: 'Raleway',
@@ -597,7 +544,7 @@ class _SecondState extends State<Second> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 // subtext //
-                                Text(
+                                const Text(
                                   'Extending your loan repayment date will attract extra charge. This will be deducted from your linked card',
                                   style: TextStyle(
                                       fontFamily: 'Raleway',
@@ -606,12 +553,12 @@ class _SecondState extends State<Second> {
                                       fontSize: 12),
                                 ),
 
-                                SizedBox(
+                                const SizedBox(
                                   height: 16,
                                 ),
 
                                 // header //
-                                Row(
+                                const Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
@@ -637,12 +584,12 @@ class _SecondState extends State<Second> {
                                   ],
                                 ),
 
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
 
                                 // content 01 //
-                                Row(
+                                const Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
@@ -683,11 +630,11 @@ class _SecondState extends State<Second> {
                                 ),
 
                                 // content 02 //
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
 
-                                Row(
+                                const Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
@@ -728,11 +675,11 @@ class _SecondState extends State<Second> {
                                 ),
 
                                 // content 03 //
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
 
-                                Row(
+                                const Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
@@ -773,11 +720,11 @@ class _SecondState extends State<Second> {
                                 ),
 
                                 // content 04 //
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
 
-                                Row(
+                                const Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
@@ -817,7 +764,7 @@ class _SecondState extends State<Second> {
                                   ],
                                 ),
 
-                                SizedBox(
+                                const SizedBox(
                                   height: 18,
                                 ),
 
@@ -847,7 +794,7 @@ class _SecondState extends State<Second> {
                                   ),
                                 ),
 
-                                SizedBox(
+                                const SizedBox(
                                   height: 14,
                                 ),
                               ],
