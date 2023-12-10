@@ -98,11 +98,7 @@ class _FirstState extends State<First> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   InkWell(
-                    onTap: () {
-                      // Navigator.of(context).push(
-                      //   MaterialPageRoute(builder: (context) => const home()),
-                      // );
-                    },
+                    onTap: () {},
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -134,12 +130,7 @@ class _FirstState extends State<First> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   InkWell(
-                    onTap: () {
-                      // Navigator.of(context).push(
-                      //   MaterialPageRoute(
-                      //       builder: (context) => const payment()),
-                      // );
-                    },
+                    onTap: () {},
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -171,12 +162,7 @@ class _FirstState extends State<First> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   InkWell(
-                    onTap: () {
-                      // Navigator.of(context).push(
-                      //   MaterialPageRoute(
-                      //       builder: (context) => const payment()),
-                      // );
-                    },
+                    onTap: () {},
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -208,12 +194,7 @@ class _FirstState extends State<First> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   InkWell(
-                    onTap: () {
-                      // Navigator.of(context).push(
-                      //   MaterialPageRoute(
-                      //       builder: (context) => const payment()),
-                      // );
-                    },
+                    onTap: () {},
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
@@ -391,7 +372,7 @@ class _FirstState extends State<First> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             // header //
-                            Row(
+                            const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 // title //
@@ -405,7 +386,7 @@ class _FirstState extends State<First> {
                                 ),
 
                                 // link //
-                                const Text(
+                                Text(
                                   'See All',
                                   style: TextStyle(
                                       fontFamily: 'Raleway',
@@ -470,7 +451,7 @@ class _FirstState extends State<First> {
                                             ),
 
                                             // text //
-                                            Column(
+                                            const Column(
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
                                               children: [
@@ -484,7 +465,7 @@ class _FirstState extends State<First> {
                                                           FontWeight.w600,
                                                       fontSize: 13),
                                                 ),
-                                                const SizedBox(
+                                                SizedBox(
                                                   height: 3,
                                                 ),
                                                 Text(
@@ -501,7 +482,7 @@ class _FirstState extends State<First> {
                                           ],
                                         ),
                                         // text //
-                                        Text(
+                                        const Text(
                                           '₦5000',
                                           style: TextStyle(
                                               fontFamily: 'Raleway',
@@ -562,7 +543,7 @@ class _FirstState extends State<First> {
                                           ),
 
                                           // text //
-                                          Column(
+                                          const Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
@@ -574,7 +555,7 @@ class _FirstState extends State<First> {
                                                     fontWeight: FontWeight.w600,
                                                     fontSize: 13),
                                               ),
-                                              const SizedBox(
+                                              SizedBox(
                                                 height: 3,
                                               ),
                                               Text(
@@ -590,7 +571,7 @@ class _FirstState extends State<First> {
                                         ],
                                       ),
                                       // text //
-                                      Text(
+                                      const Text(
                                         '₦45,000',
                                         style: TextStyle(
                                             fontFamily: 'Raleway',
@@ -650,7 +631,7 @@ class _FirstState extends State<First> {
                                           ),
 
                                           // text //
-                                          Column(
+                                          const Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
@@ -662,7 +643,7 @@ class _FirstState extends State<First> {
                                                     fontWeight: FontWeight.w600,
                                                     fontSize: 13),
                                               ),
-                                              const SizedBox(
+                                              SizedBox(
                                                 height: 3,
                                               ),
                                               Text(
@@ -678,7 +659,7 @@ class _FirstState extends State<First> {
                                         ],
                                       ),
                                       // text //
-                                      Text(
+                                      const Text(
                                         '₦35,000',
                                         style: TextStyle(
                                             fontFamily: 'Raleway',
@@ -739,7 +720,7 @@ class _FirstState extends State<First> {
                                           ),
 
                                           // text //
-                                          Column(
+                                          const Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                             children: [
@@ -751,7 +732,7 @@ class _FirstState extends State<First> {
                                                     fontWeight: FontWeight.w600,
                                                     fontSize: 13),
                                               ),
-                                              const SizedBox(
+                                              SizedBox(
                                                 height: 3,
                                               ),
                                               Text(
@@ -767,7 +748,7 @@ class _FirstState extends State<First> {
                                         ],
                                       ),
                                       // text //
-                                      Text(
+                                      const Text(
                                         '₦35,000',
                                         style: TextStyle(
                                             fontFamily: 'Raleway',
