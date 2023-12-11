@@ -209,7 +209,7 @@ class _SecondState extends State<Second> {
                               ],
                             ),
 
-                            SizedBox(
+                            cSizedBox(
                               height: 10,
                             ),
 
